@@ -3,7 +3,7 @@ import java.lang.Math;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
+/** ENG:
  * It is a program calculating the trigonometric
  *  function sinus in radians,  based on the sequence sin x = x - xpow3/3!+xpow5/5!-xpow7/7! etc...
  *  You can choose the precision by entering the integer value for the sequence
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *   The program checks the value with Java.Math sin method
  *   It is my practice of the Java with http://www.ntu.edu.sg/home/ehchua/programming/
  *  java/j2a_basicsexercises.html
- *   
+ *  PL: 
  * To program wykonujący obliczanie funkcji sinus od wartości w radianach, 
  * bazuje na wzorze sin x = x - xpow3/3!+xpow5/5!-xpow7/7! itd...
  *  Drugą liczbą 'int' jest wybór precyzji obliczeń. Program sprawdza poprawność danych
