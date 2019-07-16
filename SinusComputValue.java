@@ -23,7 +23,7 @@ public class SinusComputValue {
 	static double x;
 	static float katWst;
 	public static void main(String[] args) {
-		System.out.println("Witamy w programie obliczjącym wartość sinus dla kąta w radianach.");
+		System.out.println("Witamy w programie obliczającym wartość funkcji sinus dla kąta w radianach.");
 		System.out.println("Podaj wielkość kąta w radianach: ");
 		Scanner rad = new Scanner(System.in);
 		
@@ -32,7 +32,7 @@ public class SinusComputValue {
 			katWst=(float) Math.toDegrees(x);						
 			System.out.printf("W stopniach podany kąt ma wielkość %.2f stopni %n", katWst);
 			
-			//przeliczenie kąta większego od 2*PI rad
+			//przeliczanie kąta większego od 2*PI rad
 			if(x>2*Math.PI) {	
 				int k = (int) ( x / (2*Math.PI));
 				x = x%(2*Math.PI);		
@@ -69,13 +69,13 @@ public class SinusComputValue {
 	
 	static double ObliczSin(double a, int b) {
 		double czynnik;					//Tutaj cząstkowa wartość obliczeń
-		double SinusW=0; 				//całka cząstek równania -(a**3/3!)+(a**5/5!)-(a**7/7!)+ itd.
+		double SinusW=0; 				//suma cząstek równania -(a**3/3!)+(a**5/5!)-(a**7/7!)+ itd.
 		
-		if (b%2==0)	{	b=b+1;}						//Korekta liczby całkowitej do nieparzystej
+		if (b%2==0)	{	b=b+1;}			//Korekta liczby całkowitej do nieparzystej
 		
 		for (int n=b; n>1; n-=2)
 		{
-			czynnik=1;					//początkowa wartość czynnika do obliczeń (a/n)*(a/n-1)..
+			czynnik=1;				//początkowa wartość czynnika do obliczeń (a/n)*(a/n-1)..
 			
 			if ((n+1)%4!=0) {			//Jeżeli czynnik a**3 a**7 itp to znak minus '-'
 				for (int i= n; i>0; i--){
