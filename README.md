@@ -1,2 +1,2 @@
 # JavaPracticLogic
-This are my practice solusions with resolving in Java
+This are my practice solutions with resolving in Java
